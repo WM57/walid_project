@@ -19,11 +19,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 from gensim.models import Word2Vec
 
-word2vec = Word2Vec(sentences=X_train)
 
 
 # Function to convert a sentence (list of words) into a matrix representing the words in the embedding space
 def embed_sentence(word2vec, sentence):
+    word2vec = Word2Vec(sentences=X_train)
 
     embedded_sentence = []
     for word in sentence:

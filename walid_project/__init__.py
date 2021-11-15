@@ -1,5 +1,6 @@
 from os.path import isfile
 from os.path import dirname
+import requests
 
 version_file = '{}/version.txt'.format(dirname(__file__))
 

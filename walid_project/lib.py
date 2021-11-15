@@ -7,7 +7,7 @@ def try_me():
 
 def weather(ville):
     response = requests.get(
-        f'https://api.openweathermap.org/data/2.5/weather?q={ville}&appid=dae9a5019961ec753439f157ed0e1221'
+        f'https://api.openweathermap.org/data/2.5/weather?q={ville}&appid=${{secrets.HEROKU_API_KEY}}'
     ).json()
     c = response['main']['temp'] - 273.15
 

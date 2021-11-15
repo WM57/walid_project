@@ -4,10 +4,11 @@ import requests
 def try_me():
     return print('Décollage immédiat')
 
+from sec import cle
 
 def weather(ville):
     response = requests.get(
-        f'https://api.openweathermap.org/data/2.5/weather?q={ville}&appid=${{secrets.WEATHER_API_KEY}}'
+        f'https://api.openweathermap.org/data/2.5/weather?q={ville}&appid={cle}'
     ).json()
     c = response['main']['temp'] - 273.15
 

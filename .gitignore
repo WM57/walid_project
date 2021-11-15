@@ -6,4 +6,4 @@ raw_data/
 *.csv
 **/__pycache__/
 .env
-walid_project/sec
+walid_project/sec.py
